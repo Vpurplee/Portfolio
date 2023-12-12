@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+
+img{
+    width: 100%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, #09090A 0%, #181719 47.57%, #36343B 126.85%, #39363D 126.85%);
+}
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    border-bottom: 1px solid #232424;
+}
+
+.nav-logo{
+    max-width: 100px;
+
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #8833ff;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width: 70%;
+}
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color:#6a00ff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover{
+    background-color: #4801AC;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 3rem 2rem;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #1d4ed8;
+    z-index: -100;
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .content h4{
+    margin-bottom: 1rem;
+    color: #ccc;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .content h1{
+    color: #fff;
+    margin-bottom: 0.6rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span{
+    background-image: linear-gradient(to right bottom, #5B00C4, #6617b5, #A567E4);
+    /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+    background-clip: text;
+    -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+    /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+    -webkit-text-fill-color: transparent;
+    /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+    color: black;
+}
+
+header .content p{
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+header .image{
+    position: relative;
+}
+
+
+header .image img{
+    max-width: 600px;
+    margin: auto;
+    margin-top: -1rem;
+}
+section .header{
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+
+}
+
+.features{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.features .card{
+    background-color: #222225;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+
+}
+
+.features .card:hover{
+    background-color: #323232;
+    border-color: #cca6f2;
+
+}
+
+.features .card span{
+    display: inline-block;
+    background-color: #4801AC;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.features .card h4{
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.features .card p{
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+
+
+.sub-header{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: #ccc;
+}
+
+.pricing{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.pricing .card{
+    background-color: #222225;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.pricing .card:hover{
+    background-color: #323232;
+    border-color: #cca6f2;
+}
+
+.pricing .card .content{
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.pricing .card h4{
+    margin-bottom: 1rem;
+    color: #994de5;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.pricing .card h3{
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #f2e9fc;
+}
+.pricing .card p{
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.pricing .card p i{
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+    color: #994de5;
+
+}
+
+.pricing .card a{
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #6a00ff;
+    text-align: center;
+
+}
+.pricing .card a{
+    color: #fff;
+
+}
+
+.pricing .card a:hover{
+    background-color: #8833ff;
+    border-color: #6a00ff;
+
+}
+
+footer{
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px repeat(3, 1fr);
+    gap: 2rem;
+    border-top: 1px solid #232424;
+}
+
+footer .column .logo{
+    max-width: 100px;
+    margin-bottom: 2rem;
+}
+footer .column .socials a{
+    color: #ccc;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+footer .column .socials a:hover{
+    color: #fff;
+    background-color: #8833ff;;
+    border-color: #6a00ff;
+}
+
+footer .column h4{
+    color: #fff;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer .column > a{
+    display: block;
+    color: #ccc;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+footer .column > a:hover{
+    color: #994de5
+}
+
+.copyright{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media (width < 900px){
+    .nav-links{
+        display: none;
+    }
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header .image{
+        grid-area: 1/1/2/2;
+    }
+    .features{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pricing{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer{
+        grid-template-columns: 1fr 200px;
+    }
+}
+
+@media (width < 600px){
+    header .image::before{
+        display: none;
+    }
+
+    .features{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pricing{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer{
+        grid-template-columns: 1fr 150px;
+    }
+
+}
+
+
+.container h2 span{
+    background-image: linear-gradient(to right bottom, #5B00C4, #6617b5, #A567E4);
+    /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+    background-clip: text;
+    -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+    /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+    -webkit-text-fill-color: transparent;
+    /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+    color: black;
+}
+
+.ver-mais{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    color: #994de5;
+}
+
+
+/* contatos */
+
+.contato{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 2fr);
+    gap: 2rem;
+}
+.input-name{
+    margin-bottom: 1rem;
+    color: #ccc;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: 2px solid #994de5;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}
+.input-email{
+    margin-bottom: 1rem;
+    color: #ccc;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 2px solid #994de5;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}
+.textarea{
+    margin-bottom: 1rem;
+    color: #ccc;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 2px solid #994de5;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}
+.mensage-container button{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 2px solid #994de5;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.mensage-container{
+    display: flex;
+    flex-direction: column;
+}
+.global-div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; 
+}
+
+.input-name:focus, .input-email:focus, .textarea:focus{
+    border: 2px solid #6a00ff;
+    
+}
+
+
+/* animação */
+
+[data-anime]{
+    opacity: 0;
+    transition: .4s;
+}
+
+[data-anime="top"]{
+    transform: translate3d( 0, -50px, 0);
+    /*  translate3d(x, y, z) */
+
+}
+[data-anime].animate{
+    opacity: 1;
+    transform: initial;
+
+}
+
+@media (width < 800px){
+    .global-div{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .images-global{
+        display: none;
+    }
+    .contato{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+.loading img{
+    width: 30px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+dialog::backdrop{
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+
+dialog{
+    width: 400px;
+    height: 200px;
+    background-color: #1F1C22;;
+    border-radius: 10px;
+    padding: 1rem;
+    border: 2px solid #994de5;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 1000;
+    margin: -180px auto;
+}
+dialog:hover{
+    border-color: #6F23BB;
+    
+}
+
+dialog h1{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(to right bottom, #5B00C4, #6617b5, #A567E4);
+    /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+    background-clip: text;
+    -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+    /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+    -webkit-text-fill-color: transparent;
+    /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+    color: black;
+}
+dialog p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}

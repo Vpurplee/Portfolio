@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Portfolio",
+        "description": "My personal portfolio showcasing my web development projects.",
+        "technologies": ["HTML", " CSS", " JavaScript"],
+        "image": ["../images/header.png"],
+        "alt" : "Imagem de um computador com um código",
+        "video": ["../images/videos/portf.mp4"],
+        "link": "https://github.com/Vpurplee?tab=repositories"
+    },
+    {
+        "name": "Tarefinhas",
+        "description": "A task management web application.",
+        "technologies": ["HTML", " CSS", " JavaScript"],
+        "image": ["../images/tarefinha.jpg"],
+        "alt" : "Imagem de um gerenciador de tarefas",
+        "video": ["../images/videos/tarefa.mp4"],
+        "link": "https://github.com/Vpurplee/Tarefinhas"
+    },
+    {
+        "name": "Yugioh! Duel Monsters",
+        "description": "A web application related to the Yu-Gi-Oh! Duel Monsters card game.",
+        "technologies": ["HTML", " CSS", " JavaScript"],
+        "image": ["../images/yugioh.jpg"],
+        "alt" : "Imagem de um jogo de cartas jokenpo",
+        "video": ["../images/videos/yugioh.mp4"],
+        "link": "https://github.com/Vpurplee/JOGO-Yugioh"
+    },
+    {
+        "name": "Remy's Restaurant",
+        "description": "A website for Remy's Restaurant, including menu and reservation features.",
+        "technologies": ["HTML", " CSS", " JavaScript"],
+        "image": ["../images/restaurant.jpg"],
+        "alt" : "Imagem de uma landing page de restaurante",
+        "video": ["../images/videos/landing.mp4"],
+        "link": "https://github.com/Vpurplee/restaurantepage"
+    },
+    {
+        "name": "Formulário de Login",
+        "description": "A login form with validation.",
+        "technologies": ["HTML", " CSS", " JavaScript"],
+        "image": ["../images/formulario.jpg"],
+        "alt" : "Imagem de um formulário de login",
+        "video": ["../images/videos/formulario.mp4"],
+        "link": "https://github.com/Vpurplee/formulario-dino"
+    },
+
+    {
+        "name": "Guerra nas Estrelas",
+        "description": "A Star Wars-themed website with interactive content.",
+        "technologies": ["HTML", " CSS", " JavaScript"],
+        "image": ["../images/star wars.jpg"],
+        "alt" : "site de resumo de filmes do star wars",
+        "video": ["../images/videos/starwars.mp4"],
+        "link": "https://github.com/Vpurplee/StarWars"
+    }
+]
