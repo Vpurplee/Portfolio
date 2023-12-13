@@ -12,7 +12,7 @@
         "name": "Tarefinhas",
         "description": "A task management web application.",
         "technologies": ["HTML", " CSS", " JavaScript"],
-        "image": ["../images/tarefinha.svg"],
+        "image": ["../images/tarefinha.png"],
         "alt" : "Imagem de um gerenciador de tarefas",
         "video": ["../images/videos/tarefa.mp4"],
         "link": "https://github.com/Vpurplee/Tarefinhas"
@@ -21,7 +21,7 @@
         "name": "Yugioh! Duel Monsters",
         "description": "A web application related to the Yu-Gi-Oh! Duel Monsters card game.",
         "technologies": ["HTML", " CSS", " JavaScript"],
-        "image": ["../images/yugioh.svg"],
+        "image": ["../images/yugioh.png"],
         "alt" : "Imagem de um jogo de cartas jokenpo",
         "video": ["../images/videos/yugioh.mp4"],
         "link": "https://github.com/Vpurplee/JOGO-Yugioh"
@@ -30,7 +30,7 @@
         "name": "Remy's Restaurant",
         "description": "A website for Remy's Restaurant, including menu and reservation features.",
         "technologies": ["HTML", " CSS", " JavaScript"],
-        "image": ["../images/restaurant.svg"],
+        "image": ["../images/restaurant.png"],
         "alt" : "Imagem de uma landing page de restaurante",
         "video": ["../images/videos/landing.mp4"],
         "link": "https://github.com/Vpurplee/restaurantepage"
@@ -39,7 +39,7 @@
         "name": "Formulário de Login",
         "description": "A login form with validation.",
         "technologies": ["HTML", " CSS", " JavaScript"],
-        "image": ["../images/formulario.svg"],
+        "image": ["../images/formulario.png"],
         "alt" : "Imagem de um formulário de login",
         "video": ["../images/videos/formulario.mp4"],
         "link": "https://github.com/Vpurplee/formulario-dino"
@@ -49,7 +49,7 @@
         "name": "Guerra nas Estrelas",
         "description": "A Star Wars-themed website with interactive content.",
         "technologies": ["HTML", " CSS", " JavaScript"],
-        "image": ["../images/star wars.svg"],
+        "image": ["../images/star wars.png"],
         "alt" : "site de resumo de filmes do star wars",
         "video": ["../images/videos/starwars.mp4"],
         "link": "https://github.com/Vpurplee/StarWars"
